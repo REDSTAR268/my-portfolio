@@ -1,0 +1,156 @@
+
+/* PROJECTS PAGE */
+.projects-page {
+  min-height: 85vh;
+  padding: 100px 10%;
+  text-align: center;
+  background:
+    radial-gradient(circle at 50% 30%, #142c50 0%, transparent 55%),
+    #080d1a;
+}
+
+/* Introduction label */
+.projects-label {
+  color: #1685ff;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  margin-bottom: 18px;
+}
+
+/* Main heading */
+.projects-title {
+  font-size: 42px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.projects-title span {
+  color: #1685ff;
+}
+
+/* Description */
+.projects-description {
+  color: #aab8d3;
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 50px;
+}
+
+/* Project cards container */
+.projects-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Individual project card */
+.project-card {
+  padding: 35px 25px;
+  text-align: left;
+  background: rgba(22, 133, 255, 0.08);
+  border: 1px solid rgba(22, 133, 255, 0.3);
+  border-radius: 12px;
+  transition: 0.3s ease;
+}
+
+/* Project card hover */
+.project-card:hover {
+  transform: translateY(-8px);
+  border-color: #1685ff;
+  box-shadow: 0 10px 30px rgba(22, 133, 255, 0.15);
+  background: rgba(22, 133, 255, 0.14);
+}
+
+/* Project title */
+.project-card h2 {
+  color: #1685ff;
+  font-size: 21px;
+  margin-bottom: 18px;
+}
+
+/* Project description */
+.project-card p {
+  color: #aab8d3;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+
+/* Project links container */
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+/* Individual project links */
+.project-links a {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+/* Live project button */
+.project-links a:first-child {
+  background: #1685ff;
+  color: #ffffff;
+  border: 1px solid #1685ff;
+}
+
+/* GitHub button */
+.project-links a:last-child {
+  background: transparent;
+  color: #1685ff;
+  border: 1px solid #1685ff;
+}
+
+/* Button hover effects */
+.project-links a:first-child:hover {
+  background: #0066cc;
+  border-color: #0066cc;
+}
+
+.project-links a:last-child:hover {
+  background: rgba(22, 133, 255, 0.15);
+  color: #ffffff;
+}
+
+/* Tablet layout */
+@media (max-width: 950px) {
+  .projects-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+  .projects-page {
+    padding: 70px 20px;
+  }
+
+  .projects-title {
+    font-size: 32px;
+  }
+
+  .projects-description {
+    font-size: 15px;
+    margin-bottom: 35px;
+  }
+
+  .projects-list {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .project-card {
+    padding: 25px 20px;
+  }
+}

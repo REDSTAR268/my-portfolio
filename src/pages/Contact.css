@@ -1,0 +1,98 @@
+
+/* CONTACT PAGE */
+.contact-page {
+  min-height: 85vh;
+  padding: 100px 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background:
+    radial-gradient(circle at 50% 30%, #142c50 0%, transparent 55%),
+    #080d1a;
+}
+
+/* Introduction label */
+.contact-label {
+  color: #1685ff;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  margin-bottom: 18px;
+}
+
+/* Heading */
+.contact-title {
+  color: #ffffff;
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.contact-title span {
+  color: #1685ff;
+}
+
+/* Description */
+.contact-description {
+  color: #aab8d3;
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 35px;
+}
+
+/* Contact card */
+.contact-card {
+  width: 100%;
+  max-width: 550px;
+  padding: 40px 30px;
+  background: rgba(22, 133, 255, 0.08);
+  border: 1px solid rgba(22, 133, 255, 0.3);
+  border-radius: 12px;
+  transition: 0.3s ease;
+}
+
+.contact-card:hover {
+  border-color: #1685ff;
+  transform: translateY(-5px);
+}
+
+/* Email heading */
+.contact-card h2 {
+  color: #1685ff;
+  font-size: 23px;
+  margin-bottom: 18px;
+}
+
+/* Email link */
+.contact-card a {
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  overflow-wrap: anywhere;
+}
+
+.contact-card a:hover {
+  color: #1685ff;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+  .contact-page {
+    padding: 70px 20px;
+  }
+
+  .contact-title {
+    font-size: 32px;
+  }
+
+  .contact-description {
+    font-size: 15px;
+  }
+
+  .contact-card {
+    padding: 30px 20px;
+  }
+}
+
